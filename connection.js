@@ -5,10 +5,11 @@ function Connection() {
 
   this.init = function() {
     this.pool = mysql.createPool({
-      host: 'http://agrihack.party:32769/',
+      host: 'agrihack.party',
+      port: 32769,
       user: 'root',
       password: 'sakura#2017',
-      database: 'sakura2017'
+      database: 'sakuratest'
     });
   };
 
