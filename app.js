@@ -21,6 +21,7 @@ const Status = sequelize.define('status_perangkat', {
   status: Sequelize.INTEGER
 }, {
   timestamps: false,
+  freezeTableName: true
 })
 
 Status.findAll({where:{port_perangkat:31}},{raw: true}).then(stat => {
